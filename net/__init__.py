@@ -1,1 +1,2 @@
-from .net import *
+from .utils import *
+from .gan_anime_model import *

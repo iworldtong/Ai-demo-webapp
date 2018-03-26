@@ -28,7 +28,7 @@ def index():
 @app.route('/gen-anime', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST':     
-        img_path = gen_anime_profile(save_dir=cfg.TEMP_DIR, model_path=cfg.GAN_MODEL_PATH)        
+        img_path = gen_anime_profile(save_dir=cfg.TEMP_DIR)        
         img_stream = return_img_stream(img_path, remove_later=True)        
         return img_stream        
     return None

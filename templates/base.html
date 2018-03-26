@@ -11,19 +11,32 @@
     <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">      
 </head>
 
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
+            <button type="button" class="btn btn-dark" data-ripple="true" style="position: relative;">
+                <div class="btn__content">
+                    <i aria-hidden="true" class="material-icons icon">menu</i>
+                </div>
+            </button>
+
             <a class="navbar-brand" href="#">iworld</a>
-            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Help</button>
+            
+            <a href="https://github.com/iworldtong/Ai-demo-webapp" class="btn btn-dark" data-ripple="true" style="position: relative;">
+                <i aria-hidden="true" class="fa fa-github"></i>
+            </a>
         </div>
     </nav>
+
     <div class="container">
         <div id="content" style="margin-top:2em">{% block content %}{% endblock %}</div>
     </div>
+
 </body>
 
 <footer>

@@ -10,7 +10,7 @@ $(document).ready(function () {
 
         $('#btn-gen-anime').hide();
         $('#debug-out').hide();
-        $('.loader').show();
+        $('.loader').show();        
 
         $.ajax({
             type: 'POST',
@@ -27,7 +27,7 @@ $(document).ready(function () {
                 $('.image-section').hide();  
                 $('.image-section').fadeIn(600);                                
                 $('#debug-out').fadeIn(600);                
-                $('#debug-out').text('OK');
+                $('#debug-out').text('"What I cannot create, I do not understand."     —— Richard Feyman');
                 console.log('Success!');
             },
         });
